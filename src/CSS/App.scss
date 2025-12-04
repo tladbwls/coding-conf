@@ -1,0 +1,106 @@
+// import
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+// root
+:root {
+  /* Neutral */
+  --neutral-900: #0D082D;
+  --neutral-700: #4B4869;
+  --neutral-500: #8784A5;
+  --neutral-300: #D1D0D5;
+  --neutral-0: #FFFFFF;
+
+  /* Orange */
+  --orange-700: #E1604F;
+  --orange-500: #F57463;
+
+  /* Gradients */
+  --gradient-01: linear-gradient(90deg, #F37362 0%, #FFF 100%);
+
+  /* Font families */
+  --font-primary: 'Inconsolata', monospace;
+
+  /* Text Preset 1 */
+  --text-1-size: 60px;
+  --text-1-line: 110%;
+  --text-1-spacing: -1px;
+
+  /* Text Preset 1 (Mobile) */
+  --text-1-m-size: 30px;
+  --text-1-m-line: 110%;
+  --text-1-m-spacing: -1px;
+
+  /* Text Preset 2 */
+  --text-2-size: 40px;
+  --text-2-line: 110%;
+  --text-2-spacing: -1px;
+
+  /* Text Preset 2 (Mobile) */
+  --text-2-m-size: 24px;
+  --text-2-m-line: 110%;
+  --text-2-m-spacing: -1px;
+
+  /* Text Preset 3 */
+  --text-3-size: 30px;
+  --text-3-line: 110%;
+  --text-3-spacing: -1px;
+
+  /* Text Preset 3 (Mobile) */
+  --text-3-m-size: 22px;
+  --text-3-m-line: 110%;
+  --text-3-m-spacing: -1px;
+
+  /* Text Preset 4 */
+  --text-4-size: 24px;
+  --text-4-line: 120%;
+  --text-4-spacing: -0.5px;
+
+  /* Text Preset 4 (Mobile) */
+  --text-4-m-size: 20px;
+  --text-4-m-line: 120%;
+  --text-4-m-spacing: -0.5px;
+
+  /* Text Preset 5 (ExtraBold) */
+  --text-5-size: 20px;
+  --text-5-line: 110%;
+  --text-5-spacing: -0.3px;
+
+  /* Text Preset 5 (Medium) */
+  --text-5m-size: 20px;
+  --text-5m-line: 110%;
+  --text-5m-spacing: -0.5px;
+
+  /* Text Preset 6 */
+  --text-6-size: 18px;
+  --text-6-line: 120%;
+  --text-6-spacing: 0px;
+
+  /* Text Preset 6 (Mobile) */
+  --text-6-m-size: 14px;
+  --text-6-m-line: 120%;
+  --text-6-m-spacing: 0px;
+
+  /* Text Preset 7 */
+  --text-7-size: 12px;
+  --text-7-line: 120%;
+  --text-7-spacing: -0.2px;
+}
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../IMG/background.svg") no-repeat;
+  color: #fff;
+  font-family: var(--font-primary);
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
