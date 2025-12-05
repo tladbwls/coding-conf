@@ -1,0 +1,28 @@
+@import "./mixins.scss";
+
+.avatar-uploader {
+  @include flex-center(column, 12px, left);
+  margin-bottom: 24px;
+
+  .input-box {
+    @include flex-center(column);
+    width: 460px;
+    height: 126px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px dashed var(--neutral-500);
+    border-radius: 8px;
+
+    .input-box-contents {
+      @include flex-center(column, 12px);
+
+      .img-box {
+        @include flex-center;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--neutral-700);
+        border-radius: 8px;
+      }
+    }
+  }
+}
