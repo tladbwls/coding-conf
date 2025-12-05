@@ -1,6 +1,7 @@
-import InputField from './Component/InputField';
-import AvatarUploader from './Component/AvatarUploader';
-import TicketButton from './Component/TicketButton';
+import "../CSS/FormPage.scss"
+import InputField from '../Component/InputField';
+import AvatarUploader from '../Component/AvatarUploader';
+import TicketButton from '../Component/TicketButton';
 import { useState } from 'react';
 
 function FormPage() {
