@@ -7,7 +7,6 @@ function InputField ({label, value, onchange, placeholder}) {
         {label}
       </label>
       <input
-        type="text"
         value={value}
         onChange={onchange}
         placeholder={placeholder}

@@ -2,7 +2,7 @@ import '../CSS/TicketButton.scss';
 
 function TicketButton({text, onClick}) {
   return (
-    <button type="button" className="ticket-btn" onClick={onClick}>
+    <button className="ticket-btn" onClick={onClick}>
       {text}
     </button>
   );

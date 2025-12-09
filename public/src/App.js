@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<FormPage/>}/>
-        <Route path="/ticket" element={<TicketPage/>}/>
+        <Route path="/tcket" element={<TicketPage/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -3,11 +3,8 @@ import InputField from '../Component/InputField';
 import AvatarUploader from '../Component/AvatarUploader';
 import TicketButton from '../Component/TicketButton';
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
 
 function FormPage() {
-  const navigate = useNavigate();
-
   const [avatar, setAvatar] = useState(null);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,14 +15,6 @@ function FormPage() {
     console.log("Name", fullName);
     console.log("Email", email);
     console.log("Github", githubUser);
-    navigate("/ticket", {
-      state: {
-        avatar,
-        fullName,
-        email,
-        githubUser
-      }
-    });
   };
 
   return (
@@ -45,21 +34,21 @@ function FormPage() {
           label="Full Name"
           value={fullName}
           placeholder="Enter your name"
-          onchange={(e) => setFullName(e.target.value)}
+          onChange={(e) => setFullName(e.target.value)}
         />
         {/* Email Address */}
         <InputField
           label="Email Address"
           value={email}
           placeholder="email@example.com"
-          onchange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
         {/* Github Username*/}
         <InputField
           label="Github Username"
           value={githubUser}
           placeholder="@yourgithub"
-          onchange={(e) => setGithubUser(e.target.value)}
+          onChange={(e) => setGithubUser(e.target.value)}
         />
 
         <TicketButton text="Generate My Ticket" onClick={handleSubmit}/>
